@@ -4,7 +4,7 @@
 
 (function() {
 
-  window.Board = Backbone.Model.extend({
+  window.Board  = Backbone.Model.extend({
 
     initialize: function (params) {
       if (_.isUndefined(params) || _.isNull(params)) {
@@ -260,7 +260,7 @@
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
       for (var i = 1; i < this.get('n') + 2; i++) {
-        console.log('input', i);
+        // console.log('input', i);
         var hasConflict = this.hasMinorDiagonalConflictAt(i);
 
         if (hasConflict) {
