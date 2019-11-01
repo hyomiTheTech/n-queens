@@ -81,7 +81,6 @@
     hasRowConflictAt: function(rowIndex) {
       // // I = rowIndex(array);
       // // O = boolean;
-
       // create a conflict array
       var conflict = [];
       // iterate over the rowIndex
